@@ -1,0 +1,261 @@
+/* Custom Light Purple Theme */
+.bg-purple {
+  background-color: #e1bee7 !important; /* Light purple */
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a1b9a !important; /* Darker purple for the brand */
+}
+
+.navbar-brand:hover {
+  color: #4a148c !important; /* Darker purple when hovered */
+}
+
+.navbar-nav .nav-link {
+  color: #6a1b9a !important; /* Light purple color for the links */
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 15px; /* Add padding to make links spaced properly */
+  margin: 0 5px; /* Add a bit of margin between each link */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4a148c !important; /* Darker purple on hover */
+}
+
+/* Adjust navbar width */
+.navbar .container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+/* Left side (Logo and BookStore) adjustments */
+.navbar .d-flex img {
+  width: 40px;  /* Adjust logo size */
+  margin-right: 10px;
+}
+
+.navbar .d-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Middle: Search bar */
+.d-flex input[type="search"] {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 1rem;
+  border-radius: 30px; /* Rounded corners */
+}
+
+/* Right side (Navbar Links) adjustments */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: 0; /* Remove extra margin */
+  flex: 0 0 45%;
+}
+
+/* Hamburger menu style */
+.navbar-toggler-icon {
+  background-color: #6a1b9a !important; /* Change burger icon color */
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 767px) {
+  .navbar .d-flex {
+    flex-direction: column; /* Stacks the logo, search bar, and navbar links vertically */
+    align-items: flex-start;
+  }
+
+  /* Navbar links stack vertically on small screens */
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  /* Make the search bar full width */
+  .d-flex input[type="search"] {
+    width: 100%;
+  }
+}
+
+
+.hero-section {
+  background-color: #e1bee7;
+  padding: 80px 0;
+}
+
+.hero-section h1 {
+  color: #4a148c;
+  font-weight: bold;
+}
+
+.hero-section p {
+  color: #6a1b9a;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #4a148c;
+}
+
+.btn-outline-dark {
+  color: #4a148c;
+  border-color: #4a148c;
+}
+
+.btn-outline-dark:hover {
+  background-color: #4a148c;
+  color: white;
+}
+
+/* Custom Light Purple Theme for Footer */
+.bg-purple {
+  background-color: #e1bee7 !important; /* Light purple */
+}
+
+footer .social-icons a {
+  font-size: 1.5rem;
+}
+
+footer .social-icons a:hover {
+  color: #4a148c;
+}
+/* Container for the book detail page */
+.book-detail-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Left Section - Book Image */
+.book-detail-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Right Section - Book Details */
+.book-detail-info {
+  padding-left: 20px;
+}
+
+/* Style for book title */
+.book-detail-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Style for book details */
+.book-detail-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Style for the 'Add to Cart' button */
+.book-detail-info button {
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-detail-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .book-detail-image, .book-detail-info {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+
+/* Themed Signup Box Styling */
+.signup-box {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #f3e5f5; /* Light purple background inside box */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(106, 27, 154, 0.2);
+  border-left: 6px solid #6a1b9a;
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a148c;
+  font-weight: bold;
+}
+
+.signup-box .form-label {
+  font-weight: 500;
+  color: #6a1b9a;
+}
+
+.signup-box .form-control {
+  border-radius: 8px;
+  border: 1px solid #d1c4e9;
+  background-color: #ffffff;
+}
+
+.signup-box .form-control:focus {
+  border-color: #8e24aa;
+  box-shadow: 0 0 6px rgba(142, 36, 170, 0.3);
+}
+
+.signup-box .btn-primary {
+  width: 100%;
+  background-color: #6a1b9a;
+  border-color: #6a1b9a;
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.signup-box .btn-primary:hover {
+  background-color: #4a148c;
+  border-color: #4a148c;
+}
+
+.signup-box .text-danger {
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.signup-box .alert-danger {
+  font-size: 0.95rem;
+  background-color: #f8bbd0;
+  color: #880e4f;
+  border: none;
+}
